@@ -1,0 +1,12 @@
+{
+  "name": "nightly-game-backup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "snapshot": "node --experimental-strip-types src/nightly_snapshot.ts",
+    "test": "node --experimental-strip-types src/snapshot_policy.test.ts"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "typescript": "^5.6.3", "@types/node": "^22.0.0" }
+}
